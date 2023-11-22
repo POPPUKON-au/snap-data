@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <style>
+    .container {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    #singlevertbarChart {
+      width: 100%; /* Make the chart width 100% */
+      max-width: 800px; /* Limit the maximum width to 600px for larger screens */
+      height: 400px;
+    }
+  </style>
+  <meta name="viewport" content="width=device-width, initial-scale=1"> <!-- Add a meta viewport tag for responsiveness -->
+</head>
+<body translate="no">
+  <div class="container">
+    <div id="singlevertbarChart"></div>
+  </div>
+  
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/echarts@5.3.0-rc.1/dist/echarts.min.js"></script>
+  <script id="rendered-js">
+    var myChart = echarts.init(document.getElementById('singlevertbarChart'));
+
+    option = {
+      grid: {
+        left: '15%',
+        top: '10%',  // Adjust the top margin
+        bottom: '20%'  // Adjust the bottom margin
+      },
+      toolbox: {
+        show: true,
+        right: "10%",
+        feature: {
+          magicType: {
+            type: ["line", "bar"]
+          },
+          saveAsImage: {}
+        }
+      },
+      title: {
+        text: 'SNAP Participant List'
+      },
+      tooltip: {
+        trigger: 'axis'
+      },
+      legend: {
+        data: ['Registry', 'Platform'], // Labels for each series
+        bottom: '5%', // Position the legend at the bottom
+        center: 0 // Center the legend
+      },
+      xAxis: {
+        type: 'category',
+        boundaryGap: true,
+        data: ['Feb-22', 'Mar-22', 'Apr-22','May-22', 'Jun-22','Jul-22', 'Aug-22','Sep-22','Oct-22', 'Nov-22', 'Dec-22', 'Jan-23', 'Feb-23', 'Mar-23', 'Apr-23', 'May-23', 'Jun-23', 'Jul-23', 'Aug-23', 'Sep-23', 'Oct-23']
+      },
+      yAxis: {
+        type: "value",
+        name: "Number of Participants",
+        nameLocation: "center",
+        nameGap: 70,
+        nameTextStyle: {
+          align: "center",
+          fontWeight: "bold"
+        },
+        splitNumber: 2
+      },
+      series: [
+        {
+          name: 'Registry', // Label for the first series
+          type: 'line',
+          data: [7, 21, 44, 63, 89, 123, 178, 237, 306, 379, 435, 557, 660, 760, 859, 981, 1122, 1258, 1392, 1499, 1525],
+          itemStyle: {
+            normal: {
+              label: { show: false },
+              color: '#C4AEFF'
+            }
+          },
+          markLine: {
+            label: true,
+            data: [{ name: 'Patients', yAxis: 7500000 }],
+          }
+        },
+        {
+          name: 'Platform', // Label for the second series
+          type: 'line',  // Adding a second line chart
+          data: [6, 17, 25, 49, 76, 102, 128, 165, 215, 271, 335, 410, 485, 601, 705, 858, 987, 1128, 1289, 1413, 1502],
+          itemStyle: {
+            normal: {
+              label: { show: false },
+              color: '#715AA0'
+            }
+          }
+        }
+      ]
+    };
+
+    if (option && typeof option === "object") {
+      myChart.setOption(option, true);
+    }
+  </script>
+</body>
+</html>
