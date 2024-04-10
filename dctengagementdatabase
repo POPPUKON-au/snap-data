@@ -1,0 +1,405 @@
+<!-- FORM: HEAD SECTION -->
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="referrer" content="no-referrer-when-downgrade">
+
+    <!-- THIS SCRIPT NEEDS TO BE LOADED FIRST BEFORE wforms.js -->
+    <script type="text/javascript" data-for="FA__DOMContentLoadedEventDispatch" src="https://dctengagementdatabase.tfaforms.net/js/FA__DOMContentLoadedEventDispatcher.js" defer></script>
+            <script type="text/javascript">
+        document.addEventListener("FA__DOMContentLoaded", function(){
+            const FORM_TIME_START = Math.floor((new Date).getTime()/1000);
+            let formElement = document.getElementById("tfa_0");
+            if (null === formElement) {
+                formElement = document.getElementById("0");
+            }
+            let appendJsTimerElement = function(){
+                let formTimeDiff = Math.floor((new Date).getTime()/1000) - FORM_TIME_START;
+                let cumulatedTimeElement = document.getElementById("tfa_dbCumulatedTime");
+                if (null !== cumulatedTimeElement) {
+                    let cumulatedTime = parseInt(cumulatedTimeElement.value);
+                    if (null !== cumulatedTime && cumulatedTime > 0) {
+                        formTimeDiff += cumulatedTime;
+                    }
+                }
+                let jsTimeInput = document.createElement("input");
+                jsTimeInput.setAttribute("type", "hidden");
+                jsTimeInput.setAttribute("value", formTimeDiff.toString());
+                jsTimeInput.setAttribute("name", "tfa_dbElapsedJsTime");
+                jsTimeInput.setAttribute("id", "tfa_dbElapsedJsTime");
+                jsTimeInput.setAttribute("autocomplete", "off");
+                if (null !== formElement) {
+                    formElement.appendChild(jsTimeInput);
+                }
+            };
+            if (null !== formElement) {
+                if(formElement.addEventListener){
+                    formElement.addEventListener('submit', appendJsTimerElement, false);
+                } else if(formElement.attachEvent){
+                    formElement.attachEvent('onsubmit', appendJsTimerElement);
+                }
+            }
+        });
+    </script>
+
+    <link href="https://dctengagementdatabase.tfaforms.net/dist/form-builder/5.0.0/wforms-layout.css?v=1701388439" rel="stylesheet" type="text/css" />
+
+    <link href="https://dctengagementdatabase.tfaforms.net/uploads/themes/theme-22.css" rel="stylesheet" type="text/css" />
+    <link href="https://dctengagementdatabase.tfaforms.net/dist/form-builder/5.0.0/wforms-jsonly.css?v=1701388439" rel="alternate stylesheet" title="This stylesheet activated by javascript" type="text/css" />
+    <script type="text/javascript" src="https://dctengagementdatabase.tfaforms.net/wForms/3.11/js/wforms.js?v=1701388439"></script>
+    <script type="text/javascript">
+        wFORMS.behaviors.prefill.skip = false;
+    </script>
+        <script type="text/javascript" src="https://dctengagementdatabase.tfaforms.net/wForms/3.11/js/localization-en_GB.js?v=1701388439"></script>
+
+
+
+
+Please copy the below code and paste in the <body> section of your website.
+
+<!-- FORM: BODY SECTION -->
+<div class="wFormContainer" >
+    <div class="wFormHeader"></div>
+    <style type="text/css">
+                #tfa_1,
+                *[id^="tfa_1["] {
+                    width: 216px !important;
+                }
+                #tfa_1-D,
+                *[id^="tfa_1["][class~="field-container-D"] {
+                    width: auto !important;
+                }
+            
+                #tfa_1-L,
+                label[id^="tfa_1["] {
+                    width: 206px !important;
+                    min-width: 0px;
+                }
+            
+                #tfa_2,
+                *[id^="tfa_2["] {
+                    width: 226px !important;
+                }
+                #tfa_2-D,
+                *[id^="tfa_2["][class~="field-container-D"] {
+                    width: auto !important;
+                }
+            
+                #tfa_163,
+                *[id^="tfa_163["] {
+                    width: 226px !important;
+                }
+                #tfa_163-D,
+                *[id^="tfa_163["][class~="field-container-D"] {
+                    width: auto !important;
+                }
+            
+                #tfa_163-L,
+                label[id^="tfa_163["] {
+                    width: 117px !important;
+                    min-width: 0px;
+                }
+            
+                #tfa_5,
+                *[id^="tfa_5["] {
+                    width: 226px !important;
+                }
+                #tfa_5-D,
+                *[id^="tfa_5["][class~="field-container-D"] {
+                    width: auto !important;
+                }
+            
+                #tfa_3,
+                *[id^="tfa_3["] {
+                    width: 226px !important;
+                }
+                #tfa_3-D,
+                *[id^="tfa_3["][class~="field-container-D"] {
+                    width: auto !important;
+                }
+            
+                #tfa_147,
+                *[id^="tfa_147["] {
+                    width: 226px !important;
+                }
+                #tfa_147-D,
+                *[id^="tfa_147["][class~="field-container-D"] {
+                    width: auto !important;
+                }
+            
+                #tfa_147-L,
+                label[id^="tfa_147["] {
+                    width: 183px !important;
+                    min-width: 0px;
+                }
+            
+                #tfa_159,
+                *[id^="tfa_159["] {
+                    width: 226px !important;
+                }
+                #tfa_159-D,
+                *[id^="tfa_159["][class~="field-container-D"] {
+                    width: auto !important;
+                }
+            
+                #tfa_236-L,
+                label[id^="tfa_236["] {
+                    width: 324px !important;
+                    min-width: 0px;
+                }
+            
+                #tfa_282,
+                *[id^="tfa_282["] {
+                    width: 203px !important;
+                }
+                #tfa_282-D,
+                *[id^="tfa_282["][class~="field-container-D"] {
+                    width: auto !important;
+                }
+            
+                #tfa_282-L,
+                label[id^="tfa_282["] {
+                    width: 123px !important;
+                    min-width: 0px;
+                }
+            </style>
+
+<div class=""><div class="wForm" id="3-WRPR" data-language="en_GB" dir="ltr">
+<div class="codesection" id="code-3">
+<script>
+                wFORMS.behaviors.paging.showProgressBar = true;
+            </script><link type="text/css" rel="stylesheet" href="https://www.tfaforms.com/uploads/themes/theme-51260.css"></div>
+<h3 class="wFormTitle" data-testid="form-title" id="3-T"><b style="font-size: 23.04px;"><span style="font-size:20.0pt;line-height:107%;
+font-family:&quot;Söhne&quot;,sans-serif">Help Us Transform Lives and Shape the Future of
+Medicine</span></b><p class="MsoNormal"><b><span style="font-size:20.0pt;line-height:107%;
+font-family:&quot;Söhne&quot;,sans-serif"></span></b></p></h3>
+<form method="post" action="https://dctengagementdatabase.tfaforms.net/api_v2/workflow/processor" class="hintsBelow labelsAbove" id="3" role="form">
+<div class="saveAndResume"><div class="oneField">
+<span class="oneChoice"><input type="checkbox" id="tfa_saveForLater" name="tfa_saveForLater" value="1" data-conditionals="#saveAndResumeFieldset" autocomplete="off"><label for="tfa_saveForLater" class="postField">Save my progress and resume later</label></span>
+                | <a href="https://dctengagementdatabase.tfaforms.net/forms/resume/3" onclick="return confirm('Are you sure you want to resume a previous response? Any information you just entered on this page will be discarded.');">Resume a previously saved form</a>
+</div></div>
+<div class="saveAndResume" id="saveAndResumeFieldset" data-condition="`#tfa_saveForLater`"><fieldset>
+<legend>Resume Later</legend>
+<p class="instructions">In order to be able to resume this form later, please enter your email and choose a password.</p>
+<div class="oneField">
+<label class="preField" for="tfa_resumeEmail">Your Email:</label><input type="text" value="" name="tfa_resumeEmail" id="tfa_resumeEmail">
+</div>
+<div class="oneField">
+<label class="preField" for="tfa_resumePassword">A Password:</label><input type="password" value="" name="tfa_resumePassword" id="tfa_resumePassword">
+</div>
+<div class="oneField">
+<label class="preField" for="tfa_confirmPassword">Confirm Password:</label><input type="password" value="" name="tfa_confirmPassword" id="tfa_confirmPassword">
+</div>
+<div class="actions">
+<script type="text/javascript">wFORMS.behaviors.validation.passwordStrength = "low";</script><input type="button" class="primaryAction" id="tfa_resumeLater" name="tfa_resumeLater" value="Save">
+</div>
+</fieldset></div>
+<div class="wfPage" id="wfPgIndex-1"><div class="section pageSection" id="tfa_164">
+<h4 id="tfa_164-T">Page 1</h4>
+<div class="htmlSection" id="tfa_299"><div class="htmlContent" id="tfa_299-HTML"><h4><p class="MsoListParagraph">By contributing to our studies, you can help to
+advance medical research that could lead to improved healthcare outcomes and
+treatments in the future. Your involvement truly makes a difference, both for
+individual health and the advancement of medical science. We encourage you to
+explore our opportunities and join us as we work to deliver ethical,
+high-quality solutions and treatments.</p>
+
+<p class="MsoListParagraph">Please register your interest below to hear more
+about our upcoming studies. The form takes approximately five minutes to complete.</p></h4></div></div>
+<div class="htmlSection" id="tfa_88"><div class="htmlContent" id="tfa_88-HTML"><div style="text-align: left;"><i style="font-size: 14.4px;"><b>Are you ready to make a real difference and enjoy exclusive benefits?</b></i></div><div style="text-align: center;"><i style="font-size: 14.4px;"><b><br></b></i></div><i style="text-align: center; font-size: 14.4px; font-weight: bold;"><div style="text-align: left;"><ul><li><i style="font-size: 14.4px;"><b>Be Financially Compensated for your time</b></i></li><li>Boutique Facility</li><li><i style="font-size: 14.4px;"><b>Gourmet Food</b></i></li><li><i style="font-size: 14.4px;"><b>High Speed Internet</b></i></li><li><i style="font-size: 14.4px;"><b>Private Work nook&nbsp;</b></i></li><li><i style="font-size: 14.4px;"><b>Gaming, Netflix, Amazon Prime</b></i></li></ul></div></i><i><div style="text-align: left;"><b><br></b></div><b><div style="text-align: left;"><i style="font-size: 14.4px;"><b>Apply Now</b></i></div></b></i></div></div>
+<div class="oneField field-container-D    " id="tfa_1-D">
+<label id="tfa_1-L" class="label preField reqMark" for="tfa_1">First Name</label><br><div class="inputWrapper"><input aria-required="true" type="text" id="tfa_1" name="tfa_1" value="" autocomplete="off" title="First Name" class="required"></div>
+</div>
+<div class="oneField field-container-D    " id="tfa_2-D">
+<label id="tfa_2-L" class="label preField reqMark" for="tfa_2">Last Name</label><br><div class="inputWrapper"><input aria-required="true" type="text" id="tfa_2" name="tfa_2" value="" autocomplete="off" title="Last Name" class="required"></div>
+</div>
+<div class="oneField field-container-D    " id="tfa_163-D">
+<label id="tfa_163-L" class="label preField reqMark" for="tfa_163">Date of Birth</label><br><div class="inputWrapper">
+<input aria-required="true" type="text" id="tfa_163" name="tfa_163" value="" autocomplete="off" aria-describedby="tfa_163-HH" title="Date of Birth" class="validate-date required"><span class="field-hint-inactive" id="tfa_163-H"><span id="tfa_163-HH" class="hint">Type DD/MM/YYY format</span></span>
+</div>
+</div>
+<div class="oneField field-container-D    " id="tfa_5-D">
+<label id="tfa_5-L" class="label preField reqMark" for="tfa_5">Phone Number</label><br><div class="inputWrapper"><input aria-required="true" type="text" id="tfa_5" name="tfa_5" value="" autocomplete="off" min="8" max="12" title="Phone Number" class="validate-integer required"></div>
+</div>
+<div class="oneField field-container-D    " id="tfa_3-D">
+<label id="tfa_3-L" class="label preField reqMark" for="tfa_3">Email</label><br><div class="inputWrapper"><input aria-required="true" type="text" id="tfa_3" name="tfa_3" value="" autocomplete="off" title="Email" class="required"></div>
+</div>
+<div class="oneField field-container-D    " id="tfa_147-D">
+<label id="tfa_147-L" class="label preField reqMark" for="tfa_147">State</label><br><div class="inputWrapper"><select aria-required="true" id="tfa_147" name="tfa_147" title="State" class="required"><option value="">Please select...</option>
+<option value="tfa_148" id="tfa_148" class="">VIC</option>
+<option value="tfa_151" id="tfa_151" data-conditionals="#tfa_175" class="">ACT</option>
+<option value="tfa_149" id="tfa_149" data-conditionals="#tfa_175" class="">NSW</option>
+<option value="tfa_150" id="tfa_150" data-conditionals="#tfa_175" class="">SA</option>
+<option value="tfa_152" id="tfa_152" data-conditionals="#tfa_175" class="">QLD</option>
+<option value="tfa_153" id="tfa_153" data-conditionals="#tfa_175" class="">NT</option>
+<option value="tfa_154" id="tfa_154" data-conditionals="#tfa_175" class="">WA</option>
+<option value="tfa_155" id="tfa_155" data-conditionals="#tfa_175" class="">TAS</option></select></div>
+</div>
+<fieldset id="tfa_175" class="section empty" data-condition="`#tfa_151` OR `#tfa_149` OR `#tfa_152` OR `#tfa_154` OR `#tfa_150` OR `#tfa_153` OR `#tfa_155`"><legend id="tfa_175-L"><span style="color: rgb(29, 27, 58); font-size: 14.4px;">We are located in Melbourne.&nbsp;</span><span style="color: rgb(29, 27, 58); font-size: 14.4px;">If you would like to participate across a state border, please select VIC.</span><br style="color: rgb(29, 27, 58); font-size: 14.4px;"><span style="color: rgb(29, 27, 58); font-size: 14.4px;">To find trials in other states please visit&nbsp;</span><span style="color: rgb(29, 27, 58); font-family: Montserrat; font-size: 11pt; background-image: initial; background-position: initial; background-size: initial; background-repeat: initial; background-attachment: initial; background-origin: initial; background-clip: initial; line-height: 15.408px;"><a href="https://www.australianclinicaltrials.gov.au/">Australian Clinical Trials</a></span><span style="color: rgb(29, 27, 58); font-size: 14.4px;">.&nbsp;</span></legend></fieldset>
+<div class="oneField field-container-D    " id="tfa_156-D" role="radiogroup" aria-labelledby="tfa_156-L" data-tfa-labelledby="-L tfa_156-L">
+<label id="tfa_156-L" class="label preField " data-tfa-check-label-for="tfa_156">Optional: Have you previously registered your interest with us?</label><br><div class="inputWrapper"><span id="tfa_156" class="choices vertical "><span class="oneChoice"><input type="radio" value="tfa_157" class="" id="tfa_157" name="tfa_156" aria-labelledby="tfa_157-L" data-tfa-labelledby="tfa_156-L tfa_157-L" data-tfa-parent-id="tfa_156"><label class="label postField" id="tfa_157-L" for="tfa_157"><span class="input-radio-faux"></span>Yes</label></span><span class="oneChoice"><input type="radio" value="tfa_158" class="" id="tfa_158" name="tfa_156" data-conditionals="#tfa_159" aria-labelledby="tfa_158-L" data-tfa-labelledby="tfa_156-L tfa_158-L" data-tfa-parent-id="tfa_156"><label class="label postField" id="tfa_158-L" for="tfa_158"><span class="input-radio-faux"></span>No</label></span></span></div>
+</div>
+<div class="oneField field-container-D    " id="tfa_159-D">
+<label id="tfa_159-L" class="label preField " for="tfa_159">Optional: How did you hear about us</label><br><div class="inputWrapper"><select id="tfa_159" name="tfa_159" data-condition="`#tfa_158`" title="Optional: How did you hear about us" class=""><option value="">Please select...</option>
+<option value="tfa_160" id="tfa_160" class="">Google</option>
+<option value="tfa_268" id="tfa_268" class="">Friends or Family</option>
+<option value="tfa_161" id="tfa_161" class="">Facebook</option>
+<option value="tfa_162" id="tfa_162" class="">Instagram</option>
+<option value="tfa_269" id="tfa_269" class="">Email</option>
+<option value="tfa_270" id="tfa_270" class="">Previous study</option>
+<option value="tfa_271" id="tfa_271" class="">Radio</option>
+<option value="tfa_272" id="tfa_272" class="">Newspaper or Magazine</option>
+<option value="tfa_273" id="tfa_273" class="">TV</option>
+<option value="tfa_274" id="tfa_274" class="">Flyer</option>
+<option value="tfa_275" id="tfa_275" class="">Other</option></select></div>
+</div>
+</div></div>
+<div class="wfPage" id="wfPgIndex-2"><div class="section pageSection" id="tfa_165">
+<h4 id="tfa_165-T">Page 2</h4>
+<div class="oneField field-container-D    " id="tfa_176-D" role="radiogroup" aria-labelledby="tfa_176-L" data-tfa-labelledby="-L tfa_176-L">
+<label id="tfa_176-L" class="label preField reqMark" data-tfa-check-label-for="tfa_176">Please select your sex assigned at birth</label><br><div class="inputWrapper"><span id="tfa_176" class="choices vertical required"><span class="oneChoice"><input type="radio" value="tfa_177" class="" id="tfa_177" name="tfa_176" aria-required="true" aria-labelledby="tfa_177-L" data-tfa-labelledby="tfa_176-L tfa_177-L" data-tfa-parent-id="tfa_176"><label class="label postField" id="tfa_177-L" for="tfa_177"><span class="input-radio-faux"></span>Male</label></span><span class="oneChoice"><input type="radio" value="tfa_178" class="" id="tfa_178" name="tfa_176" aria-required="true" data-conditionals="#tfa_260" aria-labelledby="tfa_178-L" data-tfa-labelledby="tfa_176-L tfa_178-L" data-tfa-parent-id="tfa_176"><label class="label postField" id="tfa_178-L" for="tfa_178"><span class="input-radio-faux"></span>Female</label></span></span></div>
+</div>
+<div class="oneField field-container-D    " id="tfa_292-D" role="radiogroup" aria-labelledby="tfa_292-L" data-tfa-labelledby="-L tfa_292-L">
+<label id="tfa_292-L" class="label preField reqMark" data-tfa-check-label-for="tfa_292">Optional: Please select your gender identity</label><br><div class="inputWrapper"><span id="tfa_292" class="choices vertical required"><span class="oneChoice"><input type="radio" value="tfa_293" class="" id="tfa_293" name="tfa_292" aria-required="true" aria-labelledby="tfa_293-L" data-tfa-labelledby="tfa_292-L tfa_293-L" data-tfa-parent-id="tfa_292"><label class="label postField" id="tfa_293-L" for="tfa_293"><span class="input-radio-faux"></span>Male</label></span><span class="oneChoice"><input type="radio" value="tfa_294" class="" id="tfa_294" name="tfa_292" aria-required="true" aria-labelledby="tfa_294-L" data-tfa-labelledby="tfa_292-L tfa_294-L" data-tfa-parent-id="tfa_292"><label class="label postField" id="tfa_294-L" for="tfa_294"><span class="input-radio-faux"></span>Female</label></span><span class="oneChoice"><input type="radio" value="tfa_295" class="" id="tfa_295" name="tfa_292" aria-required="true" aria-labelledby="tfa_295-L" data-tfa-labelledby="tfa_292-L tfa_295-L" data-tfa-parent-id="tfa_292"><label class="label postField" id="tfa_295-L" for="tfa_295"><span class="input-radio-faux"></span>Non-binary</label></span></span></div>
+</div>
+<div class="oneField field-container-D    " id="tfa_182-D" role="radiogroup" aria-labelledby="tfa_182-L" data-tfa-labelledby="-L tfa_182-L">
+<label id="tfa_182-L" class="label preField reqMark" data-tfa-check-label-for="tfa_182">Do you Smoke/Vape</label><br><div class="inputWrapper"><span id="tfa_182" class="choices vertical required"><span class="oneChoice"><input type="radio" value="tfa_183" class="" id="tfa_183" name="tfa_182" aria-required="true" data-conditionals="#tfa_222" aria-labelledby="tfa_183-L" data-tfa-labelledby="tfa_182-L tfa_183-L" data-tfa-parent-id="tfa_182"><label class="label postField" id="tfa_183-L" for="tfa_183"><span class="input-radio-faux"></span>Yes</label></span><span class="oneChoice"><input type="radio" value="tfa_184" class="" id="tfa_184" name="tfa_182" aria-required="true" aria-labelledby="tfa_184-L" data-tfa-labelledby="tfa_182-L tfa_184-L" data-tfa-parent-id="tfa_182"><label class="label postField" id="tfa_184-L" for="tfa_184"><span class="input-radio-faux"></span>No</label></span></span></div>
+</div>
+<div class="oneField field-container-D    " id="tfa_222-D" role="radiogroup" aria-labelledby="tfa_222-L" data-tfa-labelledby="-L tfa_222-L">
+<label id="tfa_222-L" class="label preField reqMark" data-tfa-check-label-for="tfa_222">How many cigarettes or nicotine containing products do you smoke?</label><br><div class="inputWrapper"><span id="tfa_222" class="choices vertical required" data-condition="`#tfa_183`"><span class="oneChoice"><input type="radio" value="tfa_223" class="" id="tfa_223" name="tfa_222" aria-required="true" aria-labelledby="tfa_223-L" data-tfa-labelledby="tfa_222-L tfa_223-L" data-tfa-parent-id="tfa_222"><label class="label postField" id="tfa_223-L" for="tfa_223"><span class="input-radio-faux"></span>Less than 5 per week</label></span><span class="oneChoice"><input type="radio" value="tfa_224" class="" id="tfa_224" name="tfa_222" aria-required="true" aria-labelledby="tfa_224-L" data-tfa-labelledby="tfa_222-L tfa_224-L" data-tfa-parent-id="tfa_222"><label class="label postField" id="tfa_224-L" for="tfa_224"><span class="input-radio-faux"></span>0-5 per day</label></span><span class="oneChoice"><input type="radio" value="tfa_225" class="" id="tfa_225" name="tfa_222" aria-required="true" aria-labelledby="tfa_225-L" data-tfa-labelledby="tfa_222-L tfa_225-L" data-tfa-parent-id="tfa_222"><label class="label postField" id="tfa_225-L" for="tfa_225"><span class="input-radio-faux"></span>5-10 per day</label></span><span class="oneChoice"><input type="radio" value="tfa_226" class="" id="tfa_226" name="tfa_222" aria-required="true" aria-labelledby="tfa_226-L" data-tfa-labelledby="tfa_222-L tfa_226-L" data-tfa-parent-id="tfa_222"><label class="label postField" id="tfa_226-L" for="tfa_226"><span class="input-radio-faux"></span>More than 10 per day</label></span></span></div>
+</div>
+<div class="oneField field-container-D    " id="tfa_195-D" role="radiogroup" aria-labelledby="tfa_195-L" data-tfa-labelledby="-L tfa_195-L">
+<label id="tfa_195-L" class="label preField reqMark" data-tfa-check-label-for="tfa_195">Do you drink alcohol</label><br><div class="inputWrapper"><span id="tfa_195" class="choices vertical required"><span class="oneChoice"><input type="radio" value="tfa_196" class="" id="tfa_196" name="tfa_195" aria-required="true" data-conditionals="#tfa_198" aria-labelledby="tfa_196-L" data-tfa-labelledby="tfa_195-L tfa_196-L" data-tfa-parent-id="tfa_195"><label class="label postField" id="tfa_196-L" for="tfa_196"><span class="input-radio-faux"></span>Yes</label></span><span class="oneChoice"><input type="radio" value="tfa_197" class="" id="tfa_197" name="tfa_195" aria-required="true" aria-labelledby="tfa_197-L" data-tfa-labelledby="tfa_195-L tfa_197-L" data-tfa-parent-id="tfa_195"><label class="label postField" id="tfa_197-L" for="tfa_197"><span class="input-radio-faux"></span>No</label></span></span></div>
+</div>
+<div class="oneField field-container-D    " id="tfa_198-D" role="radiogroup" aria-labelledby="tfa_198-L" data-tfa-labelledby="-L tfa_198-L">
+<label id="tfa_198-L" class="label preField reqMark" data-tfa-check-label-for="tfa_198">How many standard drinks?</label><br><div class="inputWrapper"><span id="tfa_198" class="choices vertical required" data-condition="`#tfa_196`"><span class="oneChoice"><input type="radio" value="tfa_199" class="" id="tfa_199" name="tfa_198" aria-required="true" aria-labelledby="tfa_199-L" data-tfa-labelledby="tfa_198-L tfa_199-L" data-tfa-parent-id="tfa_198"><label class="label postField" id="tfa_199-L" for="tfa_199"><span class="input-radio-faux"></span>Less than 5&nbsp;per week</label></span><span class="oneChoice"><input type="radio" value="tfa_200" class="" id="tfa_200" name="tfa_198" aria-required="true" aria-labelledby="tfa_200-L" data-tfa-labelledby="tfa_198-L tfa_200-L" data-tfa-parent-id="tfa_198"><label class="label postField" id="tfa_200-L" for="tfa_200"><span class="input-radio-faux"></span>5-10&nbsp;per week</label></span><span class="oneChoice"><input type="radio" value="tfa_201" class="" id="tfa_201" name="tfa_198" aria-required="true" aria-labelledby="tfa_201-L" data-tfa-labelledby="tfa_198-L tfa_201-L" data-tfa-parent-id="tfa_198"><label class="label postField" id="tfa_201-L" for="tfa_201"><span class="input-radio-faux"></span>more than 10&nbsp;per week</label></span></span></div>
+</div>
+<div class="oneField field-container-D    " id="tfa_185-D" role="radiogroup" aria-labelledby="tfa_185-L" data-tfa-labelledby="-L tfa_185-L">
+<label id="tfa_185-L" class="label preField reqMark" data-tfa-check-label-for="tfa_185"><span style="color: rgb(41, 40, 41); font-family: &quot;Helvetica Neue&quot;, Helvetica, Arial, sans-serif; font-size: 16px; letter-spacing: 0.64px;">Do you regularly use any recreational drugs? (e.g. marijuana, cocaine, ecstasy)</span></label><br><div class="inputWrapper"><span id="tfa_185" class="choices vertical required"><span class="oneChoice"><input type="radio" value="tfa_186" class="" id="tfa_186" name="tfa_185" aria-required="true" data-conditionals="#tfa_296" aria-labelledby="tfa_186-L" data-tfa-labelledby="tfa_185-L tfa_186-L" data-tfa-parent-id="tfa_185"><label class="label postField" id="tfa_186-L" for="tfa_186"><span class="input-radio-faux"></span>Yes</label></span><span class="oneChoice"><input type="radio" value="tfa_187" class="" id="tfa_187" name="tfa_185" aria-required="true" aria-labelledby="tfa_187-L" data-tfa-labelledby="tfa_185-L tfa_187-L" data-tfa-parent-id="tfa_185"><label class="label postField" id="tfa_187-L" for="tfa_187"><span class="input-radio-faux"></span>No</label></span></span></div>
+</div>
+<div class="oneField field-container-D    " id="tfa_296-D">
+<label id="tfa_296-L" class="label preField " for="tfa_296">Optional: Please detail</label><br><div class="inputWrapper">
+<textarea aria-describedby="tfa_296-HH" id="tfa_296" name="tfa_296" data-condition="`#tfa_186`" title="Optional: Please detail" class=""></textarea><span class="field-hint-inactive" id="tfa_296-H"><span id="tfa_296-HH" class="hint">Drug type and regularity</span></span>
+</div>
+</div>
+<div class="oneField field-container-D    " id="tfa_188-D">
+<label id="tfa_188-L" class="label preField reqMark" for="tfa_188">Height (cm)</label><br><div class="inputWrapper"><input aria-required="true" type="text" id="tfa_188" name="tfa_188" value="" autocomplete="off" title="Height (cm)" class="required"></div>
+</div>
+<div class="oneField field-container-D    " id="tfa_190-D">
+<label id="tfa_190-L" class="label preField reqMark" for="tfa_190">Weight (kg)</label><br><div class="inputWrapper"><input aria-required="true" type="text" id="tfa_190" name="tfa_190" value="" autocomplete="off" title="Weight (kg)" class="required"></div>
+</div>
+<div class="oneField field-container-D    " id="tfa_207-D" role="radiogroup" aria-labelledby="tfa_207-L" data-tfa-labelledby="-L tfa_207-L">
+<label id="tfa_207-L" class="label preField " data-tfa-check-label-for="tfa_207">Optional: Do you have any special dietary requirements?</label><br><div class="inputWrapper"><span id="tfa_207" class="choices vertical "><span class="oneChoice"><input type="radio" value="tfa_208" class="" id="tfa_208" name="tfa_207" data-conditionals="#tfa_202" aria-labelledby="tfa_208-L" data-tfa-labelledby="tfa_207-L tfa_208-L" data-tfa-parent-id="tfa_207"><label class="label postField" id="tfa_208-L" for="tfa_208"><span class="input-radio-faux"></span>Yes</label></span><span class="oneChoice"><input type="radio" value="tfa_209" class="" id="tfa_209" name="tfa_207" aria-labelledby="tfa_209-L" data-tfa-labelledby="tfa_207-L tfa_209-L" data-tfa-parent-id="tfa_207"><label class="label postField" id="tfa_209-L" for="tfa_209"><span class="input-radio-faux"></span>No</label></span></span></div>
+</div>
+<div class="oneField field-container-D    " id="tfa_202-D" role="group" aria-labelledby="tfa_202-L" data-tfa-labelledby="-L tfa_202-L">
+<label id="tfa_202-L" class="label preField " data-tfa-check-label-for="tfa_202">Please check all that apply</label><br><div class="inputWrapper"><span id="tfa_202" class="choices vertical " data-condition="`#tfa_208`"><span class="oneChoice"><input type="checkbox" value="tfa_203" class="" id="tfa_203" name="tfa_203" aria-labelledby="tfa_203-L" data-tfa-labelledby="tfa_202-L tfa_203-L" data-tfa-parent-id="tfa_202"><label class="label postField" id="tfa_203-L" for="tfa_203"><span class="input-checkbox-faux"></span>Vegetarian</label></span><span class="oneChoice"><input type="checkbox" value="tfa_204" class="" id="tfa_204" name="tfa_204" aria-labelledby="tfa_204-L" data-tfa-labelledby="tfa_202-L tfa_204-L" data-tfa-parent-id="tfa_202"><label class="label postField" id="tfa_204-L" for="tfa_204"><span class="input-checkbox-faux"></span>Vegan</label></span><span class="oneChoice"><input type="checkbox" value="tfa_205" class="" id="tfa_205" name="tfa_205" aria-labelledby="tfa_205-L" data-tfa-labelledby="tfa_202-L tfa_205-L" data-tfa-parent-id="tfa_202"><label class="label postField" id="tfa_205-L" for="tfa_205"><span class="input-checkbox-faux"></span>Gluten free and coeliac</label></span><span class="oneChoice"><input type="checkbox" value="tfa_206" class="" id="tfa_206" name="tfa_206" aria-labelledby="tfa_206-L" data-tfa-labelledby="tfa_202-L tfa_206-L" data-tfa-parent-id="tfa_202"><label class="label postField" id="tfa_206-L" for="tfa_206"><span class="input-checkbox-faux"></span>Dairy free and lactose free.</label></span><span class="oneChoice"><input type="checkbox" value="tfa_216" class="" id="tfa_216" name="tfa_216" data-conditionals="#tfa_298" aria-labelledby="tfa_216-L" data-tfa-labelledby="tfa_202-L tfa_216-L" data-tfa-parent-id="tfa_202"><label class="label postField" id="tfa_216-L" for="tfa_216"><span class="input-checkbox-faux"></span>Other</label></span></span></div>
+</div>
+<div class="oneField field-container-D    " id="tfa_298-D">
+<label id="tfa_298-L" class="label preField " for="tfa_298">Optional: Please specify</label><br><div class="inputWrapper"><textarea id="tfa_298" name="tfa_298" data-condition="`#tfa_216`" title="Optional: Please specify" class=""></textarea></div>
+</div>
+<div class="oneField field-container-D    " id="tfa_213-D" role="radiogroup" aria-labelledby="tfa_213-L" data-tfa-labelledby="-L tfa_213-L">
+<label id="tfa_213-L" class="label preField reqMark" data-tfa-check-label-for="tfa_213">Do you have any allergies?</label><br><div class="inputWrapper"><span id="tfa_213" class="choices vertical required"><span class="oneChoice"><input type="radio" value="tfa_214" class="" id="tfa_214" name="tfa_213" aria-required="true" data-conditionals="#tfa_217" aria-labelledby="tfa_214-L" data-tfa-labelledby="tfa_213-L tfa_214-L" data-tfa-parent-id="tfa_213"><label class="label postField" id="tfa_214-L" for="tfa_214"><span class="input-radio-faux"></span>Yes</label></span><span class="oneChoice"><input type="radio" value="tfa_215" class="" id="tfa_215" name="tfa_213" aria-required="true" aria-labelledby="tfa_215-L" data-tfa-labelledby="tfa_213-L tfa_215-L" data-tfa-parent-id="tfa_213"><label class="label postField" id="tfa_215-L" for="tfa_215"><span class="input-radio-faux"></span>No</label></span></span></div>
+</div>
+<div class="oneField field-container-D    " id="tfa_217-D">
+<label id="tfa_217-L" class="label preField " for="tfa_217">Please detail any allergies</label><br><div class="inputWrapper"><textarea id="tfa_217" name="tfa_217" data-condition="`#tfa_214`" title="Please detail any allergies" class=""></textarea></div>
+</div>
+</div></div>
+<div class="wfPage" id="wfPgIndex-3"><div class="section pageSection" id="tfa_191">
+<h4 id="tfa_191-T">Page 3</h4>
+<div class="oneField field-container-D    " id="tfa_227-D">
+<label id="tfa_227-L" class="label preField " for="tfa_227">Optional: What is your ethnicity/family history</label><br><div class="inputWrapper"><select id="tfa_227" name="tfa_227" title="Optional: What is your ethnicity/family history" class=""><option value="">Please select...</option>
+<option value="tfa_228" id="tfa_228" class="">Caucasian</option>
+<option value="tfa_229" id="tfa_229" class="">African or African-American</option>
+<option value="tfa_230" id="tfa_230" class="">Aboriginal or Torres Strait Islander</option>
+<option value="tfa_231" id="tfa_231" class="">Pacific Islander</option>
+<option value="tfa_232" id="tfa_232" class="">Middle Eastern</option>
+<option value="tfa_233" id="tfa_233" class="">Asian</option>
+<option value="tfa_234" id="tfa_234" class="">Mixed </option>
+<option value="tfa_235" id="tfa_235" class="">Other</option></select></div>
+</div>
+<div class="oneField field-container-D    " id="tfa_236-D" role="group" aria-labelledby="tfa_236-L" data-tfa-labelledby="-L tfa_236-L">
+<label id="tfa_236-L" class="label preField reqMark" data-tfa-check-label-for="tfa_236" aria-label="     Do you have any of the following conditions?   required"><p style="text-indent:-18.0pt;mso-list:l0 level1 lfo1" class="MsoListParagraph"><span style="font-size:12.0pt;line-height:107%">&nbsp; &nbsp; &nbsp;Do you have any of the following conditions?</span></p></label><br><div class="inputWrapper"><span id="tfa_236" class="choices vertical required"><span class="oneChoice"><input type="checkbox" value="tfa_237" class="" id="tfa_237" name="tfa_237" aria-labelledby="tfa_237-L" data-tfa-labelledby="tfa_236-L tfa_237-L" data-tfa-parent-id="tfa_236"><label class="label postField" id="tfa_237-L" for="tfa_237"><span class="input-checkbox-faux"></span>Asthma</label></span><span class="oneChoice"><input type="checkbox" value="tfa_238" class="" id="tfa_238" name="tfa_238" data-conditionals="#tfa_288" aria-labelledby="tfa_238-L" data-tfa-labelledby="tfa_236-L tfa_238-L" data-tfa-parent-id="tfa_236"><label class="label postField" id="tfa_238-L" for="tfa_238"><span class="input-checkbox-faux"></span>Diabetes</label></span><span class="oneChoice"><input type="checkbox" value="tfa_249" class="" id="tfa_249" name="tfa_249" data-conditionals="#tfa_239" aria-labelledby="tfa_249-L" data-tfa-labelledby="tfa_236-L tfa_249-L" data-tfa-parent-id="tfa_236"><label class="label postField" id="tfa_249-L" for="tfa_249"><span class="input-checkbox-faux"></span>Neurological Condition (such as MS, Epilepsy)</label></span><span class="oneChoice"><input type="checkbox" value="tfa_250" class="" id="tfa_250" name="tfa_250" data-conditionals="#tfa_239" aria-labelledby="tfa_250-L" data-tfa-labelledby="tfa_236-L tfa_250-L" data-tfa-parent-id="tfa_236"><label class="label postField" id="tfa_250-L" for="tfa_250"><span class="input-checkbox-faux"></span>Inflammatory Condition (Such as Crohns or Rheumatoid Arthritis)</label></span><span class="oneChoice"><input type="checkbox" value="tfa_251" class="" id="tfa_251" name="tfa_251" data-conditionals="#tfa_239" aria-labelledby="tfa_251-L" data-tfa-labelledby="tfa_236-L tfa_251-L" data-tfa-parent-id="tfa_236"><label class="label postField" id="tfa_251-L" for="tfa_251"><span class="input-checkbox-faux"></span>Heart or circulation condition (Hypertension or CVD)</label></span><span class="oneChoice"><input type="checkbox" value="tfa_252" class="" id="tfa_252" name="tfa_252" data-conditionals="#tfa_239" aria-labelledby="tfa_252-L" data-tfa-labelledby="tfa_236-L tfa_252-L" data-tfa-parent-id="tfa_236"><label class="label postField" id="tfa_252-L" for="tfa_252"><span class="input-checkbox-faux"></span>Viral Condition (Such as HIV or Hepatitis)</label></span><span class="oneChoice"><input type="checkbox" value="tfa_253" class="" id="tfa_253" name="tfa_253" data-conditionals="#tfa_284" aria-labelledby="tfa_253-L" data-tfa-labelledby="tfa_236-L tfa_253-L" data-tfa-parent-id="tfa_236"><label class="label postField" id="tfa_253-L" for="tfa_253"><span class="input-checkbox-faux"></span>Issues with having blood taken</label></span><span class="oneChoice"><input type="checkbox" value="tfa_255" class="" id="tfa_255" name="tfa_255" data-conditionals="#tfa_239" aria-labelledby="tfa_255-L" data-tfa-labelledby="tfa_236-L tfa_255-L" data-tfa-parent-id="tfa_236"><label class="label postField" id="tfa_255-L" for="tfa_255"><span class="input-checkbox-faux"></span>Other</label></span><span class="oneChoice"><input type="checkbox" value="tfa_256" class="" id="tfa_256" name="tfa_256" aria-labelledby="tfa_256-L" data-tfa-labelledby="tfa_236-L tfa_256-L" data-tfa-parent-id="tfa_236"><label class="label postField" id="tfa_256-L" for="tfa_256"><span class="input-checkbox-faux"></span>None</label></span></span></div>
+</div>
+<div class="oneField field-container-D    " id="tfa_239-D">
+<label id="tfa_239-L" class="label preField reqMark" for="tfa_239">Please detail you medical condition below</label><br><div class="inputWrapper">
+<textarea aria-required="true" aria-describedby="tfa_239-HH" id="tfa_239" name="tfa_239" data-condition="`#tfa_249` OR `#tfa_250` OR `#tfa_251` OR `#tfa_252` OR `#tfa_255`" title="Please detail you medical condition below" class="required"></textarea><span class="field-hint-inactive" id="tfa_239-H"><span id="tfa_239-HH" class="hint">Condition, date of diagnosis (estimate if unsure)</span></span>
+</div>
+</div>
+<div class="oneField field-container-D    " id="tfa_288-D">
+<label id="tfa_288-L" class="label preField reqMark" for="tfa_288">Diabetes: Please detail below</label><br><div class="inputWrapper">
+<textarea aria-required="true" aria-describedby="tfa_288-HH" id="tfa_288" name="tfa_288" data-condition="`#tfa_238`" title="Diabetes: Please detail below" class="required"></textarea><span class="field-hint-inactive" id="tfa_288-H"><span id="tfa_288-HH" class="hint">Type of Diabetes, date of diagnosis&nbsp;<span style="font-size: 12.24px;">(estimate if unsure)</span></span></span>
+</div>
+</div>
+<div class="oneField field-container-D    " id="tfa_284-D">
+<label id="tfa_284-L" class="label preField reqMark" for="tfa_284">Blood Draw issues: Please detail</label><br><div class="inputWrapper">
+<textarea aria-required="true" aria-describedby="tfa_284-HH" id="tfa_284" name="tfa_284" data-condition="`#tfa_253`" title="Blood Draw issues: Please detail" class="required"></textarea><span class="field-hint-inactive" id="tfa_284-H"><span id="tfa_284-HH" class="hint">Faint? Multiple attempts required?</span></span>
+</div>
+</div>
+<div class="oneField field-container-D    " id="tfa_240-D" role="radiogroup" aria-labelledby="tfa_240-L" data-tfa-labelledby="-L tfa_240-L">
+<label id="tfa_240-L" class="label preField reqMark" data-tfa-check-label-for="tfa_240">Do you take any medications or Supplements?</label><br><div class="inputWrapper"><span id="tfa_240" class="choices vertical required"><span class="oneChoice"><input type="radio" value="tfa_241" class="" id="tfa_241" name="tfa_240" aria-required="true" data-conditionals="#tfa_244" aria-labelledby="tfa_241-L" data-tfa-labelledby="tfa_240-L tfa_241-L" data-tfa-parent-id="tfa_240"><label class="label postField" id="tfa_241-L" for="tfa_241"><span class="input-radio-faux"></span>Yes</label></span><span class="oneChoice"><input type="radio" value="tfa_242" class="" id="tfa_242" name="tfa_240" aria-required="true" aria-labelledby="tfa_242-L" data-tfa-labelledby="tfa_240-L tfa_242-L" data-tfa-parent-id="tfa_240"><label class="label postField" id="tfa_242-L" for="tfa_242"><span class="input-radio-faux"></span>No</label></span></span></div>
+</div>
+<div class="oneField field-container-D    " id="tfa_244-D">
+<label id="tfa_244-L" class="label preField " for="tfa_244">Please list your medications below</label><br><div class="inputWrapper">
+<textarea aria-describedby="tfa_244-HH" id="tfa_244" name="tfa_244" data-condition="`#tfa_241`" title="Please list your medications below" class=""></textarea><span class="field-hint-inactive" id="tfa_244-H"><span id="tfa_244-HH" class="hint">Name, Dose, How often, How long for (months/years)</span></span>
+</div>
+</div>
+<div class="oneField field-container-D    " id="tfa_257-D" role="radiogroup" aria-labelledby="tfa_257-L" data-tfa-labelledby="-L tfa_257-L">
+<label id="tfa_257-L" class="label preField reqMark" data-tfa-check-label-for="tfa_257"><i><span style="font-size:10.0pt;font-family:&quot;Söhne&quot;,sans-serif;
+mso-fareast-font-family:&quot;Times New Roman&quot;;mso-bidi-font-family:&quot;Times New Roman&quot;;
+mso-bidi-theme-font:minor-bidi;color:#374151;mso-ansi-language:EN-AU;
+mso-fareast-language:EN-GB;mso-bidi-language:AR-SA">As part of our commitment
+to participant well-being, have you sought professional mental health support
+in the last two years? Your response is confidential.</span></i></label><br><div class="inputWrapper"><span id="tfa_257" class="choices vertical required"><span class="oneChoice"><input type="radio" value="tfa_258" class="" id="tfa_258" name="tfa_257" aria-required="true" data-conditionals="#tfa_301" aria-labelledby="tfa_258-L" data-tfa-labelledby="tfa_257-L tfa_258-L" data-tfa-parent-id="tfa_257"><label class="label postField" id="tfa_258-L" for="tfa_258"><span class="input-radio-faux"></span>Yes</label></span><span class="oneChoice"><input type="radio" value="tfa_259" class="" id="tfa_259" name="tfa_257" aria-required="true" aria-labelledby="tfa_259-L" data-tfa-labelledby="tfa_257-L tfa_259-L" data-tfa-parent-id="tfa_257"><label class="label postField" id="tfa_259-L" for="tfa_259"><span class="input-radio-faux"></span>No</label></span></span></div>
+</div>
+<div class="oneField field-container-D    " id="tfa_301-D">
+<label id="tfa_301-L" class="label preField " for="tfa_301">Optional: Please share as you are comfortable</label><br><div class="inputWrapper"><textarea id="tfa_301" name="tfa_301" data-condition="`#tfa_258`" title="Optional: Please share as you are comfortable" class=""></textarea></div>
+</div>
+<div class="oneField field-container-D    " id="tfa_260-D" role="radiogroup" aria-labelledby="tfa_260-L" data-tfa-labelledby="-L tfa_260-L">
+<label id="tfa_260-L" class="label preField reqMark" data-tfa-check-label-for="tfa_260">Are you currently pregnant, breastfeeding or trying to conceive?</label><br><div class="inputWrapper"><span id="tfa_260" class="choices vertical required" data-condition="`#tfa_178`"><span class="oneChoice"><input type="radio" value="tfa_261" class="" id="tfa_261" name="tfa_260" aria-required="true" aria-labelledby="tfa_261-L" data-tfa-labelledby="tfa_260-L tfa_261-L" data-tfa-parent-id="tfa_260"><label class="label postField" id="tfa_261-L" for="tfa_261"><span class="input-radio-faux"></span>Pregnant</label></span><span class="oneChoice"><input type="radio" value="tfa_262" class="" id="tfa_262" name="tfa_260" aria-required="true" aria-labelledby="tfa_262-L" data-tfa-labelledby="tfa_260-L tfa_262-L" data-tfa-parent-id="tfa_260"><label class="label postField" id="tfa_262-L" for="tfa_262"><span class="input-radio-faux"></span>Breastfeeding</label></span><span class="oneChoice"><input type="radio" value="tfa_263" class="" id="tfa_263" name="tfa_260" aria-required="true" aria-labelledby="tfa_263-L" data-tfa-labelledby="tfa_260-L tfa_263-L" data-tfa-parent-id="tfa_260"><label class="label postField" id="tfa_263-L" for="tfa_263"><span class="input-radio-faux"></span>Trying to conceive</label></span><span class="oneChoice"><input type="radio" value="tfa_264" class="" id="tfa_264" name="tfa_260" aria-required="true" aria-labelledby="tfa_264-L" data-tfa-labelledby="tfa_260-L tfa_264-L" data-tfa-parent-id="tfa_260"><label class="label postField" id="tfa_264-L" for="tfa_264"><span class="input-radio-faux"></span>No</label></span></span></div>
+</div>
+<div class="oneField field-container-D    " id="tfa_245-D" role="radiogroup" aria-labelledby="tfa_245-L" data-tfa-labelledby="-L tfa_245-L">
+<label id="tfa_245-L" class="label preField reqMark" data-tfa-check-label-for="tfa_245"><span style="font-size:12.0pt;line-height:107%;
+font-family:&quot;Calibri&quot;,sans-serif;mso-ascii-theme-font:minor-latin;mso-fareast-font-family:
+Calibri;mso-fareast-theme-font:minor-latin;mso-hansi-theme-font:minor-latin;
+mso-bidi-font-family:&quot;Times New Roman&quot;;mso-bidi-theme-font:minor-bidi;
+mso-ansi-language:EN-AU;mso-fareast-language:EN-US;mso-bidi-language:AR-SA">Do you currently use any forms of contraception?</span></label><br><div class="inputWrapper"><span id="tfa_245" class="choices vertical required"><span class="oneChoice"><input type="radio" value="tfa_246" class="" id="tfa_246" name="tfa_245" aria-required="true" aria-labelledby="tfa_246-L" data-tfa-labelledby="tfa_245-L tfa_246-L" data-tfa-parent-id="tfa_245"><label class="label postField" id="tfa_246-L" for="tfa_246"><span class="input-radio-faux"></span>Yes</label></span><span class="oneChoice"><input type="radio" value="tfa_247" class="" id="tfa_247" name="tfa_245" aria-required="true" data-conditionals="#tfa_265" aria-labelledby="tfa_247-L" data-tfa-labelledby="tfa_245-L tfa_247-L" data-tfa-parent-id="tfa_245"><label class="label postField" id="tfa_247-L" for="tfa_247"><span class="input-radio-faux"></span>No</label></span></span></div>
+</div>
+<div class="oneField field-container-D    " id="tfa_265-D" role="radiogroup" aria-labelledby="tfa_265-L" data-tfa-labelledby="-L tfa_265-L">
+<label id="tfa_265-L" class="label preField reqMark" data-tfa-check-label-for="tfa_265"><span style="font-size:12.0pt;line-height:107%;
+font-family:&quot;Calibri&quot;,sans-serif;mso-ascii-theme-font:minor-latin;mso-fareast-font-family:
+Calibri;mso-fareast-theme-font:minor-latin;mso-hansi-theme-font:minor-latin;
+mso-bidi-font-family:&quot;Times New Roman&quot;;mso-bidi-theme-font:minor-bidi;
+mso-ansi-language:EN-AU;mso-fareast-language:EN-US;mso-bidi-language:AR-SA">Would
+you be willing to use a form of contraception, or remain abstinent for the
+trial period?</span></label><br><div class="inputWrapper"><span id="tfa_265" class="choices vertical required" data-condition="`#tfa_247`"><span class="oneChoice"><input type="radio" value="tfa_266" class="" id="tfa_266" name="tfa_265" aria-required="true" aria-labelledby="tfa_266-L" data-tfa-labelledby="tfa_265-L tfa_266-L" data-tfa-parent-id="tfa_265"><label class="label postField" id="tfa_266-L" for="tfa_266"><span class="input-radio-faux"></span>Yes</label></span><span class="oneChoice"><input type="radio" value="tfa_267" class="" id="tfa_267" name="tfa_265" aria-required="true" aria-labelledby="tfa_267-L" data-tfa-labelledby="tfa_265-L tfa_267-L" data-tfa-parent-id="tfa_265"><label class="label postField" id="tfa_267-L" for="tfa_267"><span class="input-radio-faux"></span>No</label></span></span></div>
+</div>
+<div class="oneField field-container-D    " id="tfa_276-D" role="group" aria-labelledby="tfa_276-L" data-tfa-labelledby="-L tfa_276-L">
+<label id="tfa_276-L" class="label preField " data-tfa-check-label-for="tfa_276">Optional: What type of trial are you most interested in? (select all that apply)</label><br><div class="inputWrapper"><span id="tfa_276" class="choices vertical "><span class="oneChoice"><input type="checkbox" value="tfa_277" class="" id="tfa_277" name="tfa_277" aria-labelledby="tfa_277-L" data-tfa-labelledby="tfa_276-L tfa_277-L" data-tfa-parent-id="tfa_276"><label class="label postField" id="tfa_277-L" for="tfa_277"><span class="input-checkbox-faux"></span>Outpatient only (no overnight stays required)&nbsp;</label></span><span class="oneChoice"><input type="checkbox" value="tfa_278" class="" id="tfa_278" name="tfa_278" aria-labelledby="tfa_278-L" data-tfa-labelledby="tfa_276-L tfa_278-L" data-tfa-parent-id="tfa_276"><label class="label postField" id="tfa_278-L" for="tfa_278"><span class="input-checkbox-faux"></span>Short studies (1-5 continuous overnight stays)</label></span><span class="oneChoice"><input type="checkbox" value="tfa_279" class="" id="tfa_279" name="tfa_279" aria-labelledby="tfa_279-L" data-tfa-labelledby="tfa_276-L tfa_279-L" data-tfa-parent-id="tfa_276"><label class="label postField" id="tfa_279-L" for="tfa_279"><span class="input-checkbox-faux"></span>Medium-length studies (5-10 continuous overnight stays)</label></span><span class="oneChoice"><input type="checkbox" value="tfa_280" class="" id="tfa_280" name="tfa_280" aria-labelledby="tfa_280-L" data-tfa-labelledby="tfa_276-L tfa_280-L" data-tfa-parent-id="tfa_276"><label class="label postField" id="tfa_280-L" for="tfa_280"><span class="input-checkbox-faux"></span>Long studies (10+ continuous overnight stays)</label></span></span></div>
+</div>
+<div class="oneField field-container-D    " id="tfa_282-D">
+<label id="tfa_282-L" class="label preField " for="tfa_282">Referral code:</label><br><div class="inputWrapper">
+<input type="text" id="tfa_282" name="tfa_282" value="" autocomplete="off" aria-describedby="tfa_282-HH" title="Referral code:" class=""><span class="field-hint-inactive" id="tfa_282-H"><span id="tfa_282-HH" class="hint">The referral code serves as a unique identifier linking your participation to your friends referral ensuring they receive an incentive if you complete a Doherty clinical trial. </span></span>
+</div>
+</div>
+<div class="htmlSection" id="tfa_281"><div class="htmlContent" id="tfa_281-HTML"><p class="MsoNormal">By registering your interest, you confirm that the information you have provided is correct at the time of writing and consent to receive communications about studies
+that may be a good fit for you. You can unsubscribe at any time. View our <a href="https://www.dohertyclinicaltrials.com/privacy-policy">privacy policy</a>
+for more information.</p></div></div>
+</div></div>
+<div class="actions" id="3-A" data-contentid="submit_button"><input type="submit" data-label="Submit" class="primaryAction" id="submit_button" value="Submit"></div>
+<div style="clear:both"></div>
+<input type="hidden" value="3" name="tfa_dbFormId" id="tfa_dbFormId"><input type="hidden" value="" name="tfa_dbResponseId" id="tfa_dbResponseId"><input type="hidden" value="5a0c26c427aeb3952ac443c2c148614e" name="tfa_dbControl" id="tfa_dbControl"><input type="hidden" value="" name="tfa_dbWorkflowSessionUuid" id="tfa_dbWorkflowSessionUuid"><input type="hidden" value="40" name="tfa_dbVersionId" id="tfa_dbVersionId"><input type="hidden" value="" name="tfa_switchedoff" id="tfa_switchedoff"><div class="saveAndResume"><div class="oneField">
+<a href="#" id="tfa_saveForLaterLink">Save my progress and resume later</a>
+                | <a href="https://dctengagementdatabase.tfaforms.net/forms/resume/3" onclick="return confirm('Are you sure you want to resume a previous response? Any information you just entered on this page will be discarded.');">Resume a previously saved form</a>
+</div></div>
+</form>
+</div></div><div class="wFormFooter"><p class="supportInfo"><a target="new" class="contactInfoLink" href="https://tfaforms.test:8443/forms/help/15" data-testid="contact-info-link">Contact Information</a><br></p></div>
+  <p class="supportInfo" >
+      </p>
+ </div>
+
+<script
+    id="open-telemetry-script"
+    type="text/javascript"
+    src="https://dctengagementdatabase.tfaforms.net/dist/open-telemetry/open-telemetry.3e6c1bedaa7fb4452dd0.js"
+    data-customer-id="204746"
+    data-exporter-url="https://us-east-1-otel.formassembly.com/v1/traces"
+    data-exporter-console="0"
+></script>
+<script src="https://dctengagementdatabase.tfaforms.net/api_v2/sst/copy-and-paste"></script>
